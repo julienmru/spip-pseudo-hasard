@@ -1,0 +1,21 @@
+<paquet
+	prefix="pseudo_hasard"
+	categorie="divers"
+	version="1.0.0"
+	etat="stable"
+	compatibilite="[3.0.0;3.0.*]"
+	documentation=""
+	schema="1.0.0"
+>
+
+	<nom>Pseudo Hasard</nom>
+
+	<auteur lien="http://www.cahri.com">Julien Tessier, Agence Cahri</auteur>
+
+	<licence>GNU/GPL</licence>
+	
+	<pipeline nom="declarer_tables_objets_sql" inclure="pseudo_hasard_pipeline.php" />
+	<pipeline nom="post_insertion" inclure="pseudo_hasard_pipeline.php" />
+	<pipeline nom="taches_generales_cron" inclure="pseudo_hasard_pipeline.php" />
+
+</paquet>
